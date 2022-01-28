@@ -1,0 +1,194 @@
+@import url("header.css");
+@import url("main.css");
+@import url("footer.css");
+@import url("tags.css");
+@import url("links.css");
+@import url("avatar.css");
+@import url("bio.css");
+@import url("social.css");
+@import url("legal.css");
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -.003em;
+  font-size: 20px;
+}
+
+#wrapper { 
+    display: grid; 
+    grid-template-columns:  repeat(3, 1fr);  
+    gap: 20px; 
+    grid-template-areas: 'header header header' 
+                         'hero hero hero' 
+                         'main main main'
+                         'tags links links'
+                         'avatar bio social'
+                         'footer footer footer'
+                         'legal legal legal';
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#header {
+    grid-area: header;
+    font-weight: 700;
+}
+
+#hero {
+    grid-area: hero;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#links {
+    grid-area: links;
+    margin-top: -40px;
+}
+
+#tags {
+    grid-area: tags;
+    margin-top: -40px;
+}
+
+#main {
+    grid-area: main;
+
+}
+
+#avatar {
+    grid-area: avatar;
+}
+
+#bio {
+    grid-area: bio;
+}
+
+#social {
+    grid-area: social;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+#legal {
+    grid-area: legal;
+    display: grid; 
+    grid-template-columns: 33% 33% auto 25px 25px 25px; 
+    gap: 5px 5px; 
+    grid-template-areas: 
+      "copyright dedication blank facebook twitter linkedin";
+    margin-top: -10px;
+}
+
+#copyright {
+    grid-area: copyright;
+    margin-top: 0px;
+}
+
+#dedication {
+    grid-area: dedication;
+}
+
+#facebook {
+    grid-area: facebook;
+}
+
+#twitter {
+    grid-area: twitter;
+}
+
+#linkedin {
+    grid-area: linkedin;
+}
+
+#blank {
+    /* unused  */    
+}
+
+.newsletter-form {
+    /* unused  */
+}
+
+.dummy {
+    /* unused  */
+}
+
+@media screen and (max-width: 1200px) {
+    /* Zusätzliche Regeln für kleinere Monitore  */
+       #wrapper { width: 1024px; }
+}
+
+@media screen and (max-width: 1024px) {
+    /* Zusätzliche Regeln für kleinere Monitore  */
+       #wrapper { width: 720px; }
+}
+    
+@media screen and (max-width: 720px) {
+       /* Zusätzliche Regeln noch kleinere Monitore  */
+       #wrapper { width: 450px; } 
+}
+
+@media screen and (max-width: 450px) {
+    /* Zusätzliche Regeln noch kleinere Monitore  */
+    #wrapper { 
+        width: 320px;
+    }
+
+    #hero img {
+        max-width: 320px;
+    }
+
+    #main main {
+        justify-content: unset;
+    }
+
+    #main article {
+        width: 320px;
+    }
+
+    #main figure {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #main img {
+        max-width: 320px; 
+    }
+
+    #avatar {
+        width: 60px;
+    }
+
+    #avatar figure {
+        margin-left: 5px;
+    }
+
+    #avatar figcaption {
+        padding-left: 0px;
+    }
+
+    #avatar img {
+        width: 60px;
+    }
+
+    #bio {
+        width: 100px;
+    }
+
+    #social {
+        width: 60px;
+    }
+
+    #social img {
+        width: 60px;
+    }
+
+}

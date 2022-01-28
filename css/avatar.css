@@ -1,0 +1,11 @@
+#avatar img {
+    width: 100px;
+}
+
+#avatar h1 {
+    margin-bottom: 10px;
+}
+
+#avatar figcaption {
+    padding-left: 15px;
+}

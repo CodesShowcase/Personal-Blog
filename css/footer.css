@@ -1,0 +1,49 @@
+footer > ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+    list-style: none;
+    margin: 0; 
+    background: slategray;
+}
+
+footer > ul li {
+    display: block;
+    padding: 1em;
+}
+
+footer > ul a {
+    text-decoration: none;
+    color: white;
+}
+  
+footer > ul a:hover {
+    color: silver;
+}
+
+footer > p {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.newsletter {
+    padding: .4rem 1rem;
+    width: 40%;
+    border-radius: 5rem;
+    outline: none;
+    border: .1rem solid #d1d1d1;
+    font-size: 14px;
+}
+   
+.subscribe {
+    padding: .5rem 2rem;
+    border-radius: 5rem;
+    background: linear-gradient(90deg, deepskyblue, #1565C0);
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
